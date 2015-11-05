@@ -1,6 +1,5 @@
 {
   "name": "angular-radialgraph",
-  "version": "1.0.0",
   "description": "Angular component that draws SVG radial graphs for a given normalized value",
   "homepage": "https://github.com/manuelhe/angular-radialgraph",
   "authors": [
@@ -11,14 +10,15 @@
   ],
   "license": "MIT",
   "main": [
-    "dist/angular-radialgraph.js",
-    "dist/angular-radialgraph.css"
+    "src/angular-radialgraph/angular-radialgraph.module.js",
+    "src/angular-radialgraph/directives/radial_graph.css"
   ],
-    "keywords": [
+  "keywords": [
     "angular",
     "radial",
     "graph",
     "svg",
+    "plot",
     "directive"
   ],
   "ignore": [
