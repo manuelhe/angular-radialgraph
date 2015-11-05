@@ -101,6 +101,9 @@ gulp.task('test-dist-minified', function (done) {
 });
 
 gulp.task('styles', function () {
+  gulp.src('src/**/*.scss')
+    .pipe(concat('angular-radialgraph.scss'))
+    .pipe(gulp.dest('./dist/'));
   return gulp.src('src/**/*.css')
     .pipe(concat('angular-radialgraph.css'))
     .pipe(gulp.dest('./dist/'));
