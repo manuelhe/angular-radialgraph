@@ -63,6 +63,23 @@ Include styles `styles.css` or create your own styles to define the `.fs-radial-
 
 ## Changelog
 
+
+### 1.0.4
+
+Removed fill to inner graph. Updated example.
+
+### 1.0.3
+
+Fixed config dependency in directive.
+
+### 1.0.2
+
+Removed unused config module.
+
+### 1.0.1
+
+Fixed dist files names.
+
 ### 1.0.0
 
 Initial version. Not much to say about.
