@@ -25,7 +25,7 @@
    * @param {strokewidth} Stroke width. Default value: 9
    *
    */
-    .directive('fsRadialGraph', function radialGraph(config) {
+    .directive('fsRadialGraph', function radialGraph() {
 
       return {
 
