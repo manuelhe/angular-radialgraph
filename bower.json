@@ -10,8 +10,8 @@
   ],
   "license": "MIT",
   "main": [
-    "src/angular-radialgraph/angular-radialgraph.module.js",
-    "src/angular-radialgraph/directives/radial_graph.css"
+    "dist/angular-radialgraph.js",
+    "dist/angular-radialgraph.css"
   ],
   "keywords": [
     "angular",

@@ -17,18 +17,8 @@ describe('', function() {
   dependencies = module.requires;
   });
 
-  it('should load config module', function() {
-    expect(hasModule('angularRadialgraph.config')).to.be.ok;
-  });
-
-  
-
-  
   it('should load directives module', function() {
     expect(hasModule('angularRadialgraph.directives')).to.be.ok;
   });
-  
-
-  
 
 });

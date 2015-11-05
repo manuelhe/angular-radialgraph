@@ -1,17 +1,10 @@
 (function (angular) {
 
-  // Config
-  angular.module('angularRadialgraph.config', [])
-      .value('angularRadialgraph.config', {
-          debug: true
-      });
-
   // Modules
   angular.module('angularRadialgraph.directives', [
     'angularRadialgraph.directives.radialGraph'
   ]);
   angular.module('angularRadialgraph', [
-    'angularRadialgraph.config',
     'angularRadialgraph.directives'
   ]);
 
@@ -20,8 +13,7 @@
 (function (angular) {
   'use strict';
 
-  angular.module('angularRadialgraph.directives.radialGraph',
-                 ['angularRadialgraph.config'])
+  angular.module('angularRadialgraph.directives.radialGraph', [])
 
   /**
    * This component draws  radial graphs for a given
