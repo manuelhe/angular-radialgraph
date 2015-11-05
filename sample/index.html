@@ -34,6 +34,17 @@
         padding-right: 0.83333rem;
         width: 300px;
       }
+
+      .custom-graph .fs-radial-graph circle {
+        stroke: #dc9;
+      }
+      .custom-graph .fs-radial-graph path {
+        stroke: #b47;
+      }
+      .custom-graph .fs-radial-graph path.complete {
+        stroke: #008;
+      }
+
     </style>
   </head>
 
@@ -65,15 +76,38 @@
                                              ng-model="graphValue"
                                              ng-init="graphValue=35"> {{ graphValue }} </li>
           <li><strong>size:</strong> 120</li>
-          <li><strong>strokewidth:</strong> 25</li>
+          <li><strong>strokewidth:</strong> 9</li>
         </ul>
       </div>
       <div fs-radial-graph
            data-value="graphValue"
            data-size="120"
-           data-strokewidth="25">
+           data-strokewidth="12">
       </div>
     </div>
+
+    <div class="row">
+      <div class="description">
+        <h2>Custom colors graph</h2>
+        <ul>
+          <li><strong>size:</strong> 100</li>
+          <li><strong>strokewidth:</strong> 25</li>
+        </ul>
+      </div>
+      <div class="custom-graph"
+           fs-radial-graph
+           data-value="graphValue"
+           data-size="100"
+           data-strokewidth="25">
+      </div>
+
+    </div>
+
+    <footer>
+      More information at: <a href="https://github.com/manuelhe/angular-radialgraph">https://github.com/manuelhe/angular-radialgraph</a>
+      <br><br>
+      2015. <a href="http://manuelhe.github.io/">Manuel Herrera</a>
+    </footer>
 
 
     <aside role="scripts">

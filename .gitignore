@@ -5,6 +5,7 @@
 .idea
 .project
 .settings
+.editorconfig
 
 # Ignore node stuff
 node_modules/
