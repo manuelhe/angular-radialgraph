@@ -2,6 +2,8 @@
 
 This is an Angular component that draws SVG radial graphs for a given normalized value (0-100) as a SVG element with an additional state for *complete* values (100). Highly inspired by [D3 Radial Progress](http://www.brightpointinc.com/clients/brightpointinc.com/library/radialProgress/index.html).
 
+Some examples here [http://www.morra.co/radialgraph/](http://www.morra.co/radialgraph/)
+
 ## Usage
 
 ### Installation
