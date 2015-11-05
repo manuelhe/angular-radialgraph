@@ -1,0 +1,29 @@
+{
+  "generator-angularjs-library": {
+    "props": {
+      "author": {
+        "name": "Manuel Herrera",
+        "email": "manuel.he@gmail.com"
+      },
+      "libraryName": {
+        "original": "angular-radialgraph",
+        "camelized": "angularRadialgraph",
+        "dasherized": "angular-radialgraph",
+        "slugified": "angular-radialgraph",
+        "parts": [
+          "angular",
+          "radialgraph"
+        ]
+      },
+      "includeModuleDirectives": true,
+      "includeModuleFilters": false,
+      "includeModuleServices": false,
+      "includeAngularModuleResource": false,
+      "includeAngularModuleCookies": false,
+      "includeAngularModuleSanitize": false,
+      "librarySrcDirectory": "src/angular-radialgraph",
+      "libraryUnitTestDirectory": "test/unit/angular-radialgraph",
+      "libraryUnitE2eDirectory": "test/e2e/angular-radialgraph"
+    }
+  }
+}

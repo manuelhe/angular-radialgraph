@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+  <head>
+    <title>angular-radialgraph Example</title>
+    <meta charset='utf-8'>
+    <link href="../dist/styles.css" media="all" rel="stylesheet">
+    <style>
+      *, *:before, *:after {
+        box-sizing: border-box;
+      }
+      html {
+        font-size: 100%;
+      }
+      body {
+        font: 16px/1.4 Helvetica, Arial, sans-serif;
+      }
+      h2{
+        margin: 0 0 1rem;
+      }
+      .row {
+        display: table;
+        width: 100%;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 1em;
+      }
+      .row:before, .row:after {
+        content: " ";
+        display: table;
+      }
+
+      .description {
+        float: left;
+        padding-left: 0.83333rem;
+        padding-right: 0.83333rem;
+        width: 300px;
+      }
+    </style>
+  </head>
+
+  <body ng-app="demo">
+
+    <h1>angular-radialgraph example</h1>
+
+    <div class="row">
+      <div class="description">
+        <h2>Basic example</h2>
+        <ul>
+          <li><strong>value:</strong> 79</li>
+          <li><strong>size:</strong> 120</li>
+          <li><strong>strokewidth:</strong> 9</li>
+        </ul>
+      </div>
+      <div fs-radial-graph
+           data-value="79"
+           data-size="120"
+           data-strokewidth="9">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="description">
+        <h2>Dynamic graph</h2>
+        <ul>
+          <li><strong>value:</strong> <input type="range" name="graph_value"
+                                             ng-model="graphValue"
+                                             ng-init="graphValue=35"> {{ graphValue }} </li>
+          <li><strong>size:</strong> 120</li>
+          <li><strong>strokewidth:</strong> 25</li>
+        </ul>
+      </div>
+      <div fs-radial-graph
+           data-value="graphValue"
+           data-size="120"
+           data-strokewidth="25">
+      </div>
+    </div>
+
+
+    <aside role="scripts">
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
+      <script src="../dist/angular-radialgraph.min.js"></script>
+      <script>angular.module('demo', ['angularRadialgraph']);</script>
+	</aside>
+
+  </body>
+
+</html>

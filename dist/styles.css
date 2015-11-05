@@ -1,0 +1,13 @@
+.fs-radial-graph circle {
+  fill: #fff;
+  stroke: #ccc;
+  stroke-width: 9;
+}
+.fs-radial-graph path {
+  fill: none;
+  stroke: #F0AD4E;
+  stroke-width: 9;
+}
+.fs-radial-graph path.complete {
+  stroke: #5BB85C;
+}
